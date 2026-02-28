@@ -11,15 +11,14 @@ body {
 
 .top {
   position: relative;
-
 }
 
 .top-inner {
-  max-width: 1100px;   /* hr.wave의 max-width랑 맞추면 더 예쁨 */
+  max-width: 1100px;   
   margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: center; /* 제목은 가운데 */
+  justify-content: center; 
   align-items: center;
 }
 
@@ -170,7 +169,38 @@ a {
 }
 
 
+@media (max-width: 704px) {
+  body { margin: 20px; }
 
+  .top h1 {
+    font-size: 35px;
+    letter-spacing: 0.1em;
+  }
+
+  hr.wave {
+    margin: 30px auto;
+  }
+
+  .cat-icon {
+    position: absolute;
+    right: 5%;            
+    top: 140%;
+    transform: translateY(-50%); /* 수직 중앙 정렬 */
+    display: inline-block;
+  }
+
+  .gallery {
+    padding: 20px;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery img {
+    max-width: 100%;
+    max-height: none;
+    border-width: 6px;
+  }
+}
 
 
 
